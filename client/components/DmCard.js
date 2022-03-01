@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/dmCard.module.css";
+import styles from "../styles/DmCard.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
