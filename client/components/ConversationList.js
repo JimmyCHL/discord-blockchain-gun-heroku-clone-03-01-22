@@ -40,7 +40,7 @@ const ConversationList = () => {
     try {
       const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/getdms`);
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setDms(data);
     } catch (error) {
       console.log(error);

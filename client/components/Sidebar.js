@@ -41,7 +41,7 @@ const Sidebar = () => {
         `${process.env.NEXT_PUBLIC_API_URL}/getchannels`
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       setChannels(data);
 
       router.push(`/?channel=${data[0].roomId}&name=${data[0].roomName}`);

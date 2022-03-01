@@ -7,7 +7,7 @@ import MessageCard from "./MessageCard";
 
 const ChatView = () => {
   const { state } = useContext(DiscordContext);
-  console.log(state);
+  // console.log(state);
 
   const formattedMessagesArray = () => {
     const uniqueArray = state.messages.filter((value, index) => {

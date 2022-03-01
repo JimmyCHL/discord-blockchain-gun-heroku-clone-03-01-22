@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "@sanity/client": "^3.1.0",
     "gun": "^0.2020.1235",
     "next": "12.1.0",
