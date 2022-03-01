@@ -1,0 +1,8 @@
+.wrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    flex: 1;
+    padding-top: 10px;
+}
