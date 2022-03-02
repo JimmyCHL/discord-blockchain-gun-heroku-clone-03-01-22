@@ -36,6 +36,7 @@ const MessageForm = () => {
     };
 
     messagesRef.set(newMessage);
+
     setMessageText("");
   };
 

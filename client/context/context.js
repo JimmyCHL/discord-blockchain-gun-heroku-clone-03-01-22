@@ -4,7 +4,9 @@ import Gun from "gun";
 
 export const DiscordContext = createContext();
 
-const gun = Gun("https://discord-app-blockchain-1.herokuapp.com/gun");
+const gun = Gun({
+  peers: ["https://discord-app-blockchain-1.herokuapp.com/gun"],
+});
 
 const initialState = { messages: [] };
 
@@ -84,7 +86,7 @@ export const DiscordProvider = ({ children }) => {
       const data = {
         userAddress: userAddress,
       };
-      console.log(userAddress);
+      // console.log(userAddress);
       //create account
       try {
         await fetch(`${process.env.NEXT_PUBLIC_API_URL}/createuser`, {
